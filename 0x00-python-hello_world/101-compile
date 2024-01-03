@@ -1,0 +1,4 @@
+#!/bin/bash
+python3 -m compileall "$PYFILE"
+base_filename=$(basename -s .py "$PYFILE")
+mv "$(dirname "$PYFILE")/$base_filename.pyc" "$(dirname "$PYFILE")/${base_filename}c.pyc"
