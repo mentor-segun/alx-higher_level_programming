@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 def square_matrix_simple(matrix=[]):
-    sq_mat = []
+    new_matrix = []
 
     for row in matrix:
         new_row = []
         for element in row:
             new_row.append(element ** 2)
-        sq_mat.appemd(new_row)
+        new_matrix.append(new_row)
 
-    return sq_mat
+    return new_matrix
